@@ -1,0 +1,10 @@
+.bigButton__div-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bigButton__button {
+    width: 800px;
+    height: 50px;
+}
