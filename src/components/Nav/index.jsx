@@ -4,8 +4,6 @@ import './index.css'
 import Button from '@material-ui/core/Button';
 
 export default function Nav(){
-    const linkMain = <div><Link to='/'>Главная</Link></div>;
-    const linkTests = <div><Link to='/tests'>Тесты</Link></div>;
     return(
         <div className='nav__div-navbar'>
             <div className='nav__div-container-icons'>
@@ -14,8 +12,16 @@ export default function Nav(){
                 <img src='./images/icon-js.png' alt="js" />
             </div>
             <div className='nav__div-container-btns'>
-                <Button children={linkMain} size='large' />   
-                <Button children={linkTests} size='large'/>
+                <Button size='large'>
+                    <div>
+                        <Link to='/'>Главная</Link>
+                    </div>
+                </Button>
+                <Button size='large'>
+                    <div>
+                        <Link to='/tests'>Тесты</Link>
+                    </div>
+                </Button>
             </div>
         </div>
     )
